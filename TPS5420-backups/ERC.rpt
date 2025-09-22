@@ -1,0 +1,24 @@
+ERC report (2025-09-18T19:57:15+0530, Encoding UTF8)
+
+***** Sheet /
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(2850 mils, 3950 mils): Symbol U1 Pin 8 [PH, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(2500 mils, 4250 mils): Symbol #PWR01 Pin 1 [Power input, Line]
+[global_label_dangling]: Global label not connected anywhere else in the schematic
+    ; warning
+    @(2850 mils, 4250 mils): Global Label 'ENA'
+[pin_to_pin]: Pins of type Unspecified and Passive are connected
+    ; warning
+    @(5250 mils, 3950 mils): Symbol U1 Pin 1 [BOOT, Unspecified, Line]
+    @(5350 mils, 3950 mils): Symbol C2 Pin 1 [Passive, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(5250 mils, 4250 mils): Symbol U1 Pin 4 [VSENSE, Power input, Line]
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(7150 mils, 3950 mils): Horizontal Wire, length 250 mils
+
+ ** ERC messages: 6  Errors 3  Warnings 3
