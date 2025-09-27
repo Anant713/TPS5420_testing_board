@@ -9,7 +9,7 @@
 	(paper "A4")
 	(title_block
 		(title "TPS5420_testing_board")
-		(rev "v03")
+		(rev "v04")
 		(comment 4 "Author : A.K.S.")
 	)
 	(layers
