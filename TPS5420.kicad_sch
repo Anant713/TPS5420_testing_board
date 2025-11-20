@@ -896,7 +896,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
+			(property "Reference" "U1"
 				(at 30.48 10.16 0)
 				(effects
 					(font
@@ -912,7 +912,7 @@
 					)
 				)
 			)
-			(property "Footprint" "D8"
+			(property "Footprint" "TPS5420_CADs:D8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1070,42 +1070,6 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -7.62 0)
-					(length 7.62)
-					(name "VSENSE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 60.96 0 180)
-					(length 7.62)
-					(name "PH"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at 60.96 -2.54 180)
 					(length 7.62)
@@ -1153,6 +1117,44 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TPS5420D_1_1"
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 7.62)
+					(name "VSENSE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 60.96 0 180)
+					(length 7.62)
+					(name "PH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1413,6 +1415,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "868008c3-ddc5-49fd-823a-d224a7b78e84")
+	)
+	(junction
+		(at 63.5 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "95f7ce2e-45b9-4bca-bab8-3be7f37e8647")
 	)
 	(junction
 		(at 144.78 100.33)
@@ -2918,7 +2926,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 190.5 104.14 90)
+		(at 193.04 114.3 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2927,25 +2935,25 @@
 		(fields_autoplaced yes)
 		(uuid "b7b00454-998a-4aa9-8c93-5df5b8a5376a")
 		(property "Reference" "J2"
-			(at 195.58 102.8699 90)
+			(at 195.58 113.0299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 195.58 105.4099 90)
+			(at 195.58 115.5699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "TerminalBlock_RND:TerminalBlock_RND_205-00232_1x02_P5.08mm_Horizontal"
-			(at 190.5 104.14 0)
+			(at 193.04 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2954,7 +2962,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 190.5 104.14 0)
+			(at 193.04 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2963,7 +2971,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 190.5 104.14 0)
+			(at 193.04 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3049,6 +3057,72 @@
 			(project ""
 				(path "/52b0f5ba-f92b-45be-b124-e7f84f7c41b2"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 63.5 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ddbfbd7f-cff9-4d1d-87b4-c884aab279f3")
+		(property "Reference" "#FLG02"
+			(at 63.5 103.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 63.5 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 63.5 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "42e84728-89e7-487f-8ee8-d24b1d586174")
+		)
+		(instances
+			(project ""
+				(path "/52b0f5ba-f92b-45be-b124-e7f84f7c41b2"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
